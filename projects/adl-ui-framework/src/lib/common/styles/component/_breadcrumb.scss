@@ -1,0 +1,32 @@
+.breadcrumb {
+	font-size: 16px;
+	line-height: 19px;
+
+	&-item {
+		color: #adb5bd !important;
+		font-weight: 700;
+
+		a {
+			color: currentColor;
+			text-decoration: none;
+		}
+
+		&.active {
+			color: #343a40 !important;
+		}
+	}
+
+	.breadcrumb-item + .breadcrumb-item {
+		padding-left: 1rem;
+
+		&:before {
+			padding-right: 1rem;
+		}
+	}
+
+	&.breadcrumb-dividers {
+		.breadcrumb-item + .breadcrumb-item::before {
+			content: '>';
+		}
+	}
+}

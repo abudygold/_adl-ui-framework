@@ -1,0 +1,51 @@
+@mixin adl-typography($font-size, $font-family) {
+	color: #212529;
+	font-size: $font-size;
+	font-family: $font-family;
+}
+
+$fonts: (
+	InterBlack: 'InterBlack',
+	InterBold: 'InterBold',
+	InterExtraBold: 'InterExtraBold',
+	InterExtraLight: 'InterExtraLight',
+	InterLight: 'InterLight',
+	InterMedium: 'InterMedium',
+	InterRegular: 'InterRegular',
+	InterSemiBold: 'InterSemiBold',
+	InterThin: 'InterThin',
+	Axiata: 'Axiata',
+	AxiataBold: 'AxiataBold',
+	AxiataBook: 'AxiataBook',
+	AxiataBookItalic: 'AxiataBookItalic',
+);
+
+@each $font, $value in $fonts {
+	.h1-#{$font} {
+		@include adl-typography(56px, $value);
+	}
+	.h2-#{$font} {
+		@include adl-typography(48px, $value);
+	}
+	.h3-#{$font} {
+		@include adl-typography(40px, $value);
+	}
+	.h4-#{$font} {
+		@include adl-typography(32px, $value);
+	}
+	.h5-#{$font} {
+		@include adl-typography(28px, $value);
+	}
+	.subtitle-36px-#{$font} {
+		@include adl-typography(36px, $value);
+	}
+	.subtitle-32px-#{$font} {
+		@include adl-typography(32px, $value);
+	}
+	.subtitle-28px-#{$font} {
+		@include adl-typography(28px, $value);
+	}
+	.font-#{$font} {
+		font-family: $value;
+	}
+}

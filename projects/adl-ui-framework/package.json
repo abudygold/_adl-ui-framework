@@ -1,0 +1,18 @@
+{
+  "name": "adl-ui-framework",
+  "version": "0.1.0",
+  "author": {
+    "name": "Abdullah Umar Babsel",
+    "email": "abudy.gold@yahoo.com",
+    "url": "https://www.linkedin.com/in/abdullah-babsail-623029118/"
+  },
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "@angular/forms": "~12.2.0",
+    "@angular/material": "^12.2.13"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

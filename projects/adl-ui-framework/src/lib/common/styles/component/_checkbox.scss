@@ -1,0 +1,25 @@
+.list-style-none {
+	list-style-type: none;
+	margin-top: 4px;
+}
+
+.mat-checkbox {
+	margin: 0 12px;
+	border-radius: 4px;
+
+	&-frame {
+		border: 1px solid #ced4da;
+		border-width: 1px !important;
+	}
+
+	&-checked,
+	&-indeterminate {
+		.mat-checkbox-background {
+			background-color: #f15a29 !important;
+		}
+	}
+
+	&-label {
+		font-size: 14px;
+	}
+}

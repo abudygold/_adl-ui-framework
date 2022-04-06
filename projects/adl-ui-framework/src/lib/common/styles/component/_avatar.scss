@@ -1,0 +1,146 @@
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background: #e9ecef;
+
+	&-rounded {
+		border-radius: 50%;
+	}
+
+	&-16 {
+		width: 16px;
+		height: 16px;
+		font-size: 7px;
+
+		.icon-avatar {
+			width: 6.86px;
+			height: 8px;
+
+			svg {
+				vertical-align: top;
+			}
+		}
+
+		img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	&-24 {
+		width: 24px;
+		height: 24px;
+		font-size: 11px;
+
+		.icon-avatar {
+			width: 10.29px;
+			height: 12px;
+
+			svg {
+				vertical-align: super;
+			}
+		}
+
+		img {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&-32 {
+		width: 32px;
+		height: 32px;
+		font-size: 14px;
+
+		.icon-avatar {
+			width: 13.71px;
+			height: 16px;
+
+			svg {
+				vertical-align: super;
+			}
+		}
+
+		img {
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	&-40 {
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+
+		.icon-avatar {
+			width: 17.14px;
+			height: 20px;
+
+			svg {
+				vertical-align: super;
+			}
+		}
+
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	&-48 {
+		width: 48px;
+		height: 48px;
+		font-size: 22px;
+
+		.icon-avatar {
+			width: 20.57px;
+			height: 24px;
+
+			svg {
+				vertical-align: super;
+			}
+		}
+
+		img {
+			width: 48px;
+			height: 48px;
+		}
+	}
+
+	&-with-image-32 {
+		span {
+			display: block;
+
+			&.title {
+				color: #212529;
+				font-size: 14px;
+				line-height: 16.94px;
+			}
+
+			&.subtitle {
+				color: #6c757d;
+				font-size: 10px;
+				line-height: 12.1px;
+			}
+		}
+	}
+
+	&-with-image-40 {
+		span {
+			display: block;
+
+			&.title {
+				color: #212529;
+				font-size: 16px;
+				line-height: 19.36px;
+			}
+
+			&.subtitle {
+				color: #6c757d;
+				font-size: 12px;
+				line-height: 14.52px;
+			}
+		}
+	}
+}
