@@ -1,27 +1,41 @@
-# AdlUiFramework
+# ADL UI Framework
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.15.
+[![Downloads](https://img.shields.io/npm/dm/adl-ui-framework.svg)](https://www.npmjs.com/package/adl-ui-framework) [![Version](https://img.shields.io/npm/v/adl-ui-framework.svg)](https://www.npmjs.com/package/adl-ui-framework)
 
-## Development server
+> Axiata Digital Labs Indonesia Design System.
+- [Website](https://abudygold.github.io/adl-ui-framework)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Search UI
+- Table UI
+- Base Service
+- Icon Service
+- Input Currency Directive
+- Only Number Directive
+- Decimal Number Pipe
+- Currency Pipe (Rupiah)
+- Safe Pipe (HTML | Style | URL | Resource URL)
+- Base Model
+  - HTTP Body Request Pagination Model
+  - HTTP Body Request Pagination with Filter Model
+  - HTTP Body Resp Model
+  - Upload File Request Model
+- Util
+  - HTTP Param Generator
+- Styles
+  - Bootstrap v5.1.3 (https://getbootstrap.com/)
+  - Component
+    - Accordion | Alert | Avatar | Breadcrumb | Button | Checbox | Input | Search | Typography
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting started
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```shell
+npm i adl-ui-framework
+```
 
-## Running unit tests
+[cdnjs](https://github.com/cdnjs/cdnjs) provides CDN support for Cropper.js's CSS and JavaScript. You can find the links [here](https://cdnjs.com/libraries/cropperjs).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Usage
