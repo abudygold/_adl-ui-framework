@@ -186,3 +186,12 @@ import { TableModule } from 'adl-ui-framework';
 export class ExampleModule {
 }
 ```
+
+## Troubleshooting
+
+Please follow this guidelines when reporting bugs and feature requests:
+
+1. Use [GitHub Issues](https://github.com/abudygold/adl-ui-framework/issues) board to report bugs and feature requests (not our email address)
+2. Please **always** write steps to reproduce the error. That way we can focus on fixing the bug, not scratching our heads trying to reproduce it.
+
+Thanks for understanding!
