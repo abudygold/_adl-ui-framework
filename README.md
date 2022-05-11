@@ -35,7 +35,3 @@
 ```shell
 npm i adl-ui-framework
 ```
-
-[cdnjs](https://github.com/cdnjs/cdnjs) provides CDN support for Cropper.js's CSS and JavaScript. You can find the links [here](https://cdnjs.com/libraries/cropperjs).
-
-### Usage
