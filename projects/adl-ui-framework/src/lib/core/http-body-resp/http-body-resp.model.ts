@@ -16,24 +16,17 @@ export class HttpBodyRespModel {
 	}
 
 	public convert(dto: any): HttpBodyRespModel {
-		if (dto.status) {
-			this.status = dto.status;
+		if (!dto.data) {
+			this.data = dto;
+			return this;
 		}
-		if (dto.message) {
-			this.message = dto.message;
-		}
-		if (dto.data) {
-			this.data = dto.data;
-		}
-		if (dto.totalRecord >= 0) {
-			this.totalRecord = dto.totalRecord;
-		}
-		if (dto.pageSize >= 0) {
-			this.pageSize = dto.pageSize;
-		}
-		if (dto.pageNo >= 0) {
-			this.pageNo = dto.pageNo;
-		}
+
+		this.status = dto.status;
+		this.message = dto.message;
+		this.data = dto.data;
+		this.totalRecord = dto.totalRecord;
+		this.pageSize = dto.pageSize;
+		this.pageNo = dto.pageNo;
 
 		return this;
 	}

@@ -1,5 +1,5 @@
 import { MatTableDataSource } from '@angular/material/table';
-import { TableButtonModel } from '.';
+import { TableButtonModel } from './table-button.model';
 
 export class TableModel {
 	public columns: any[];

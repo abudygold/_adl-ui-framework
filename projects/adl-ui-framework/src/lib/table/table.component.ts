@@ -93,17 +93,112 @@ import { TableModel } from './model';
         <td mat-cell
           *matCellDef="let row">
           <ng-container *ngFor="let button of table.actions">
-
-            <button mat-flat-button
+            <!-- Flat -->
+            <button *ngIf="button.type === 'basic' && button.selector === 'flat'"
+              mat-flat-button
+              class="mr-1"
               [color]="button.color"
-              [disabled]="button.disabled">
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+              {{button.label}}
+            </button>
+
+            <button *ngIf="button.type === 'basicWithIcon' && button.selector === 'flat'"
+              mat-flat-button
+              class="mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
 		          <mat-icon *ngIf="button.icon">
                 {{button.icon}}
               </mat-icon>
 
               {{button.label}}
             </button>
-            
+
+            <button *ngIf="button.type === 'icon' && button.selector === 'flat'"
+              mat-flat-button
+              class="button-icon mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+              <mat-icon>{{button.icon}}</mat-icon>
+            </button>
+
+            <button *ngIf="button.type === 'rounded' && button.selector === 'flat'"
+              mat-flat-button
+              class="rounded-20px mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+              {{button.label}}
+            </button>
+
+            <button *ngIf="button.type === 'roundedWithIcon' && button.selector === 'flat'"
+              mat-flat-button
+              class="rounded-20px mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+		          <mat-icon *ngIf="button.icon">
+                {{button.icon}}
+              </mat-icon>
+
+              {{button.label}}
+            </button>
+            <!-- Stroked -->
+            <button *ngIf="button.type === 'basic' && button.selector === 'stroked'"
+              mat-stroked-button
+              class="mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+              {{button.label}}
+            </button>
+
+            <button *ngIf="button.type === 'basicWithIcon' && button.selector === 'stroked'"
+              mat-stroked-button
+              class="mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+		          <mat-icon *ngIf="button.icon">
+                {{button.icon}}
+              </mat-icon>
+
+              {{button.label}}
+            </button>
+
+            <button *ngIf="button.type === 'icon' && button.selector === 'stroked'"
+              mat-stroked-button
+              class="button-icon mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+              <mat-icon>{{button.icon}}</mat-icon>
+            </button>
+
+            <button *ngIf="button.type === 'rounded' && button.selector === 'stroked'"
+              mat-stroked-button
+              class="rounded-20px mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+              {{button.label}}
+            </button>
+
+            <button *ngIf="button.type === 'roundedWithIcon' && button.selector === 'stroked'"
+              mat-stroked-button
+              class="rounded-20px mr-1"
+              [color]="button.color"
+              [disabled]="button.disabled"
+              (click)="onClick(row, button.action)">
+		          <mat-icon *ngIf="button.icon">
+                {{button.icon}}
+              </mat-icon>
+
+              {{button.label}}
+            </button>
           </ng-container>
         </td>
       </ng-container>

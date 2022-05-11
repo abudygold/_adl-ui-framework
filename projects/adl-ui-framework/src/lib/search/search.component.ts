@@ -5,22 +5,33 @@ import { SearchModel } from './model';
 @Component({
   selector: 'adl-search',
   template: `
-    <mat-form-field class="input-classic input-no-hint w-100"
+    <mat-form-field class="input-classic input-no-hint search-input w-100"
 			floatLabel="never">
 			<input matInput
 				autocomplete="off"
 				[placeholder]="config.placeholder"
-        (input)="onInput()">
+				[formControl]="form"
+        		(input)="onInput()">
 
-			<mat-icon matPrefix
-				class="pointer mr-2">search</mat-icon>
+			<mat-icon *ngIf="!form.value"
+				matPrefix
+				svgIcon="icon-search-grey-bold"
+				class="icon-line-height mr-2"></mat-icon>
 
-      <button *ngIf="form.value"
-        matSuffix
-        mat-icon-button
-        (click)="clearInput()">
-        <mat-icon>close</mat-icon>
-      </button>
+			<mat-icon *ngIf="form.value"
+				matPrefix
+				svgIcon="icon-search-blue-bold"
+				class="icon-line-height mr-2"></mat-icon>
+
+			<button *ngIf="form.value"
+				mat-flat-button
+				matSuffix
+				color="primary"
+				class="button-icon search-button px-2"
+        (click)="onSubmit()">
+				<mat-icon svgIcon="icon-search-white"
+					class="icon-line-height"></mat-icon>
+			</button>
 		</mat-form-field>
   `
 })
@@ -49,12 +60,13 @@ export class SearchComponent implements OnInit {
 		clearTimeout(this.debounceTimer);
 
 		this.debounceTimer = setTimeout(() => {
-			this.updateSearch.emit(this.form.value);
+      if (this.form.value.length === 0) {
+        this.updateSearch.emit(this.form.value);
+      }
 		}, this.debounceTime);
 	}
 
-	public clearInput(): void {
-		this.form.setValue(null);
-		this.updateSearch.emit(this.form.value);
-	}
+  public onSubmit(): void {
+    this.updateSearch.emit(this.form.value);
+  }
 }
