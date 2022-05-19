@@ -1,6 +1,11 @@
 {
   "name": "adl-ui-framework",
-  "version": "1.0.0",
+  "description": "ADL UI Framework",
+  "version": "1.0.4",
+  "keywords": [
+    "angular"
+  ],
+  "license": "Apache-2.0",
   "author": {
     "name": "Abdullah Umar Babsel",
     "email": "abudy.gold@yahoo.com",
@@ -14,5 +19,9 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abudygold/adl-ui-framework.git"
   }
 }

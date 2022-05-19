@@ -1,0 +1,34 @@
+table {
+	border: 1px solid #adb5bd !important;
+	border-radius: 10px;
+	&.mat-table {
+		border-collapse: separate;
+		overflow: hidden !important;
+		tbody tr:nth-of-type(odd) {
+			background-color: #f8f9fa;
+		}
+		thead tr {
+			height: auto !important;
+			th {
+				height: 60px;
+				color: #343a40;
+				background-color: #cce4fd;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+	.no-content {
+		text-align: center;
+		th {
+			color: #343a40;
+			font-size: 14px;
+			font-weight: 500;
+			background-color: #f8f9fa !important;
+		}
+	}
+	> :not(:last-child) > :last-child > * {
+		border-bottom: 0;
+	}
+}

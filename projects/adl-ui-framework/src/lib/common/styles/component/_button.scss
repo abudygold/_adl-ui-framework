@@ -1,5 +1,19 @@
 .mat-stroked-button,
 .mat-flat-button {
+	.material-icons {
+		font-size: 21px;
+		line-height: 1.1;
+	}
+	.add-icons {
+		display: inline-flex;
+		height: 16px;
+		width: 16px;
+	}
+	.add-icons-with-block {
+		display: inline-block;
+		height: 16px;
+		width: 16px;
+	}
 	&.button-icon {
 		min-width: auto;
 	}

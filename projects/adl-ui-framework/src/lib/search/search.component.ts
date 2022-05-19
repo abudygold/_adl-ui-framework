@@ -28,7 +28,7 @@ import { SearchModel } from './model';
 				matSuffix
 				color="primary"
 				class="button-icon search-button px-2"
-        (click)="onSubmit()">
+        		(click)="onSubmit()">
 				<mat-icon svgIcon="icon-search-white"
 					class="icon-line-height"></mat-icon>
 			</button>

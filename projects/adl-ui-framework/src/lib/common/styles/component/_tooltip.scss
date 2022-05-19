@@ -1,0 +1,43 @@
+.mat-tooltip-panel {
+	.mat-tooltip {
+		color: #f8f9fa !important;
+		padding: 16px !important;
+		border-radius: 8px !important;
+		background: #343a40 !important;
+		font-weight: 400;
+		font-size: 13px !important;
+		line-height: 19px;
+	}
+	&-below {
+		.mat-tooltip {
+			margin-top: 4px;
+			&.start {
+				margin-left: calc(0% - 5rem);
+			}
+			&.end {
+				margin-right: calc(0% - 5rem);
+			}
+		}
+	}
+	&-above {
+		.mat-tooltip {
+			margin-bottom: 4px;
+			&.start {
+				margin-left: calc(0% - 5rem);
+			}
+			&.end {
+				margin-right: calc(0% - 5rem);
+			}
+		}
+	}
+	&-left {
+		.mat-tooltip {
+			margin-right: 4px;
+		}
+	}
+	&-right {
+		.mat-tooltip {
+			margin-left: 4px;
+		}
+	}
+}
