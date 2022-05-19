@@ -1,0 +1,138 @@
+@mixin foundry_sterling($base_path) {
+	/* Axiata */
+	@font-face {
+		font-family: 'Axiata';
+		src: url('#{$base_path}/Axiata/Axiata-Medium.otf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'AxiataBold';
+		src: url('#{$base_path}/Axiata/Axiata-Bold.otf') format('opentype');
+	}
+
+	@font-face {
+		font-family: 'AxiataBook';
+		src: url('#{$base_path}/Axiata/Axiata-Book.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'AxiataBookItalic';
+		src: url('#{$base_path}/Axiata/Axiata-BookItalic.otf') format('opentype');
+	}
+
+	/* Inter */
+	@font-face {
+		font-family: 'InterBlack';
+		src: url('#{$base_path}/Inter/Inter-Black.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'InterBold';
+		src: url('#{$base_path}/Inter/Inter-Bold.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'InterExtraBold';
+		src: url('#{$base_path}/Inter/Inter-ExtraBold.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'InterExtraLight';
+		src: url('#{$base_path}/Inter/Inter-ExtraLight.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'InterLight';
+		src: url('#{$base_path}/Inter/Inter-Light.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'InterMedium';
+		src: url('#{$base_path}/Inter/Inter-Medium.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'InterRegular';
+		src: url('#{$base_path}/Inter/Inter-Regular.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'InterSemiBold';
+		src: url('#{$base_path}/Inter/Inter-SemiBold.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'InterThin';
+		src: url('#{$base_path}/Inter/Inter-Thin.ttf') format('truetype');
+	}
+	
+	/* Material Icons */
+	@font-face {
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: 400;
+		src: url('#{$base_path}/MaterialIcons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+		src: local('Material Icons'), local('MaterialIcons-Regular'),
+			url('#{$base_path}/MaterialIcons//MaterialIcons-Regular.woff2')
+				format('woff2'),
+			url('#{$base_path}/MaterialIcons//MaterialIcons-Regular.woff') format('woff'),
+			url('#{$base_path}/MaterialIcons//MaterialIcons-Regular.ttf')
+				format('truetype');
+	}
+	
+	.material-icons {
+		font-family: 'Material Icons';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 24px; /* Preferred icon size */
+		display: inline-block;
+		line-height: 1;
+		text-transform: none;
+		letter-spacing: normal;
+		word-wrap: normal;
+		white-space: nowrap;
+		direction: ltr;
+		vertical-align: middle;
+	
+		/* Support for all WebKit browsers. */
+		-webkit-font-smoothing: antialiased;
+		/* Support for Safari and Chrome. */
+		text-rendering: optimizeLegibility;
+	
+		/* Support for Firefox. */
+		-moz-osx-font-smoothing: grayscale;
+	
+		/* Support for IE. */
+		font-feature-settings: 'liga';
+	
+		/* Rules for sizing the icon. */
+		&.md-18 {
+			font-size: 18px;
+		}
+		&.md-24 {
+			font-size: 24px;
+		}
+		&.md-36 {
+			font-size: 36px;
+		}
+		&.md-48 {
+			font-size: 48px;
+		}
+	
+		/* Rules for using icons as black on a light background. */
+		&.md-dark {
+			color: rgba(0, 0, 0, 0.54);
+		}
+		&.md-dark.md-inactive {
+			color: rgba(0, 0, 0, 0.26);
+		}
+	
+		/* Rules for using icons as white on a dark background. */
+		&.md-light {
+			color: rgba(255, 255, 255, 1);
+		}
+		&.md-light.md-inactive {
+			color: rgba(255, 255, 255, 0.3);
+		}
+	}
+}

@@ -15,6 +15,7 @@
 - Only Number Directive
 - Decimal Number Pipe
 - Currency Pipe (Rupiah)
+- Transform AbstractControl to FormControl
 - Safe Pipe (HTML | Style | URL | Resource URL)
 - Base Model
   - HTTP Body Request Pagination Model
@@ -25,8 +26,10 @@
   - HTTP Param Generator
 - Styles
   - Bootstrap v5.1.3 (https://getbootstrap.com/)
+  - Font Family
+	- Axiata | Inter | Material Icons
   - Component
-    - Accordion | Alert | Avatar | Breadcrumb | Button | Checbox | Input | Search | Typography
+    - Accordion | Alert | Avatar | Breadcrumb | Button | Checbox | Input | Search | Tooltip | Typography
 
 ## Getting started
 

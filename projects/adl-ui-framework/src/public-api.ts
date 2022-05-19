@@ -29,3 +29,5 @@ export { RupiahPipe } from './lib/core/pipes/rupiah/rupiah';
 export { RupiahModule } from './lib/core/pipes/rupiah/rupiah.module';
 export { SafePipe } from './lib/core/pipes/safe/safe';
 export { SafePipeModule } from './lib/core/pipes/safe/safe-pipe.module';
+export { ToControlPipe } from './lib/core/pipes/to-control/to-control';
+export { ToControlModule } from './lib/core/pipes/to-control/to-control.module';

@@ -38,3 +38,40 @@
 	border: 1px solid #adb5bd !important;
 	background-color: transparent !important;
 }
+
+/* BUTTON */
+button:focus {
+	outline: 0 !important;
+}
+button:hover {
+	opacity: 0.8 !important;
+}
+
+.mat-button[disabled],
+.mat-flat-button[disabled],
+.mat-icon-button[disabled],
+.mat-stroked-button[disabled] {
+	cursor: not-allowed !important;
+}
+
+/* COLOR */
+.mat-primary,
+.mat-select-arrow,
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+	color: #212529 !important;
+}
+
+.mat-danger,
+.mat-danger .mat-option.mat-selected:not(.mat-option-disabled) {
+	color: #ff1c1c !important;
+}
+
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary {
+	background-color: #212529 !important;
+	color: white !important;
+}
+
+.mat-default {
+	color: #000000 !important;
+}
