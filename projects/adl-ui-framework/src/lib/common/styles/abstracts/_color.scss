@@ -1,0 +1,74 @@
+$color-black: #000000;
+$color-white: #ffffff;
+$color-primary: #212529;
+$color-heading: #f15a29;
+$color-light: #f8f9fa;
+$color-dark: #343a40;
+$color-red: #ff1c1c;
+$color-scroll: #737373;
+
+$color-black-20: #f8f9fa;
+$color-black-30: #e9ecef;
+$color-black-40: #dee2e6;
+$color-black-50: #ced4da;
+$color-black-60: #adb5bd;
+$color-black-70: #6c757d;
+$color-black-80: #495057;
+$color-black-90: #343a40;
+$color-black-100: #212529;
+
+$colors: (
+	black: $color-black,
+	white: $color-white,
+	primary: $color-primary,
+	heading: $color-heading,
+	light: $color-light,
+	dark: $color-dark,
+	red: $color-red,
+);
+
+$color-primary-pallete: (
+	50: #f8f9fa,
+	100: #f8f9fa,
+	200: #e9ecef,
+	300: #dee2e6,
+	400: #ced4da,
+	500: #adb5bd,
+	600: #6c757d,
+	700: #495057,
+	800: #343a40,
+	900: #212529,
+	A100: #f8f9fa,
+	A200: #e9ecef,
+	A400: #ced4da,
+	A700: #495057,
+	contrast: (
+		50: $color-dark,
+		100: $color-dark,
+		200: $color-dark,
+		300: $color-dark,
+		400: $color-dark,
+		500: $color-light,
+		600: $color-light,
+		700: $color-light,
+		800: $color-light,
+		900: $color-light,
+		A100: $color-dark,
+		A200: $color-light,
+		A400: $color-light,
+		A700: $color-light,
+	),
+);
+
+$opacities: (
+	10: 0.1,
+	20: 0.2,
+	30: 0.3,
+	40: 0.4,
+	50: 0.5,
+	60: 0.6,
+	70: 0.7,
+	80: 0.8,
+	90: 0.9,
+	100: 1,
+);

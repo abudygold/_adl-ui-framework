@@ -1,0 +1,160 @@
+@import '../abstracts/color';
+
+$font-colors: (
+	7a7a7a: #7a7a7a,
+	737373: #737373,
+	9a9a9a: #9a9a9a,
+	848484: #848484,
+	a7acaf: #a7acaf,
+);
+
+$font-sizes: (
+	10px: 10px,
+	11px: 11px,
+	12px: 12px,
+	14px: 14px,
+	16px: 16px,
+	18px: 18px,
+	20px: 20px,
+	21px: 21px,
+	24px: 24px,
+	26px: 26px,
+	30px: 30px,
+	32px: 32px,
+	48px: 48px,
+);
+
+$font-weights: (
+	thin: 100,
+	xlight: 200,
+	light: 300,
+	regular: 400,
+	medium: 500,
+	sbold: 600,
+	bold: 700,
+	xbold: 800,
+);
+
+/* SEPARATOR */
+@each $color, $value in map-merge($font-colors, $colors) {
+	.font-#{'' + $color} {
+		color: $value !important;
+	}
+}
+
+@each $size, $value in $font-sizes {
+	.font-#{'' + $size} {
+		font-size: $value !important;
+	}
+}
+
+@each $weight, $value in $font-weights {
+	.font-#{'' + $weight} {
+		font-weight: $value !important;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	@each $color, $value in map-merge($font-colors, $colors) {
+		.font-xs-#{'' + $color} {
+			color: $value !important;
+		}
+	}
+
+	@each $size, $value in $font-sizes {
+		.font-xs-#{'' + $size} {
+			font-size: $value !important;
+		}
+	}
+
+	@each $weight, $value in $font-weights {
+		.font-xs-#{'' + $weight} {
+			font-weight: $value !important;
+		}
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	@each $color, $value in map-merge($font-colors, $colors) {
+		.font-sm-#{'' + $color} {
+			color: $value !important;
+		}
+	}
+
+	@each $size, $value in $font-sizes {
+		.font-sm-#{'' + $size} {
+			font-size: $value !important;
+		}
+	}
+
+	@each $weight, $value in $font-weights {
+		.font-sm-#{'' + $weight} {
+			font-weight: $value !important;
+		}
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	@each $color, $value in map-merge($font-colors, $colors) {
+		.font-md-#{'' + $color} {
+			color: $value !important;
+		}
+	}
+
+	@each $size, $value in $font-sizes {
+		.font-md-#{'' + $size} {
+			font-size: $value !important;
+		}
+	}
+
+	@each $weight, $value in $font-weights {
+		.font-md-#{'' + $weight} {
+			font-weight: $value !important;
+		}
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	@each $color, $value in map-merge($font-colors, $colors) {
+		.font-lg-#{'' + $color} {
+			color: $value !important;
+		}
+	}
+
+	@each $size, $value in $font-sizes {
+		.font-lg-#{'' + $size} {
+			font-size: $value !important;
+		}
+	}
+
+	@each $weight, $value in $font-weights {
+		.font-lg-#{'' + $weight} {
+			font-weight: $value !important;
+		}
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	@each $color, $value in map-merge($font-colors, $colors) {
+		.font-xl-#{'' + $color} {
+			color: $value !important;
+		}
+	}
+
+	@each $size, $value in $font-sizes {
+		.font-xl-#{'' + $size} {
+			font-size: $value !important;
+		}
+	}
+
+	@each $weight, $value in $font-weights {
+		.font-xl-#{'' + $weight} {
+			font-weight: $value !important;
+		}
+	}
+}

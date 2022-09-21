@@ -1,0 +1,64 @@
+$bg-color: #f15a29;
+$label-color: #6c757d;
+$active-color: #f15a29;
+
+@mixin adl-tabs-line($bg, $label, $active) {
+	$bg-color: $bg !global;
+	$label-color: $label !global;
+	$active-color: $active !global;
+}
+
+@mixin adl-tabs-contained($bg, $label, $active) {
+	$bg-color: $bg !global;
+	$label-color: $label !global;
+	$active-color: $active !global;
+}
+
+/* How to use */
+/* @include adl-tabs-line(#f15a29, #6c757d, #f15a29);
+@include adl-tabs-contained(#f15a29, #6c757d, #f15a29); */
+
+.tabs-line {
+	.mat-ink-bar {
+		background-color: $bg-color !important;
+	}
+
+	.mat-tab-label {
+		opacity: 1;
+
+		.mat-tab-label-content {
+			color: $label-color;
+		}
+
+		&-active {
+			.mat-tab-label-content {
+				color: $active-color;
+			}
+		}
+	}
+}
+
+.tabs-contained {
+	.mat-ink-bar {
+		top: 0;
+		background-color: $bg-color !important;
+	}
+
+	.mat-tab-label {
+		opacity: 1;
+		padding: 0;
+		background-color: #e9ecef;
+
+		.mat-tab-label-content {
+			color: $label-color;
+		}
+
+		&-active {
+			background-color: #ffffff;
+
+			.mat-tab-label-content {
+				color: $active-color;
+			}
+		}
+	}
+}

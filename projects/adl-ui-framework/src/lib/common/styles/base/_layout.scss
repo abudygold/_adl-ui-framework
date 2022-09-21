@@ -1,0 +1,80 @@
+.center {
+	display: block !important;
+	margin: auto auto !important;
+}
+
+.h-fit {
+	height: fit-content !important;
+}
+
+.h-100vh {
+	height: 100vh !important;
+}
+
+.overflow-auto {
+	overflow: auto !important;
+}
+
+.overflow-xy {
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+}
+
+.stretch-block {
+	bottom: 0 !important;
+	position: absolute !important;
+	left: 0 !important;
+	right: 0 !important;
+	top: 0 !important;
+}
+
+.w-fit {
+	width: fit-content !important;
+}
+
+.d-content {
+	display: contents;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.w-100vw {
+	width: 100vw !important;
+}
+
+.w-auto {
+	width: auto !important;
+}
+
+.h-auto {
+	height: auto !important;
+}
+
+.w-48 {
+	width: 48%;
+}
+
+.w-90 {
+	width: 90% !important;
+}
+
+.shadow-1 {
+	background: #c4c4c4;
+	box-shadow: 12px 12px 20px rgba(44, 59, 113, 0.04);
+}
+
+.shadow-2 {
+	background: #c4c4c4;
+	box-shadow: 15px 15px 25px rgba(44, 59, 113, 0.1);
+}
+
+.overlay-backdrop-dialog {
+	background: rgba(196, 200, 204, 0.47);
+	box-shadow: 15px 15px 25px rgba(44, 59, 113, 0.1);
+}

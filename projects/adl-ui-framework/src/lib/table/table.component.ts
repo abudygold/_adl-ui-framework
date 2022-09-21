@@ -9,7 +9,7 @@ import { TableModel } from './model';
       <table mat-table
         matSort
         matSortDisableClear
-        class="w-100 mb-3"
+        class="adl-table w-100 mb-3"
         [dataSource]="table.dataSource"
         (matSortChange)="sort()">
 

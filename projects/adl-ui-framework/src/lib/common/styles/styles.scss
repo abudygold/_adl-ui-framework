@@ -2,6 +2,15 @@
 @import 'bootstrap/bootstrap';
 @import './fonts.scss';
 
+/* Base Styles */
+@import 'abstracts/variables';
+@import 'base/background';
+@import 'base/border';
+@import 'base/cursor';
+@import 'base/font';
+@import 'base/layout';
+@import 'base/spacing';
+
 /* Main Styles */
 @import 'component/accordion';
 @import 'component/alert';
@@ -14,3 +23,6 @@
 @import 'component/typography';
 @import 'component/table';
 @import 'component/tooltip';
+@import 'component/tabs';
+@import 'component/dialog';
+@import 'component/picker';
