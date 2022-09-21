@@ -42,11 +42,24 @@ npm i adl-ui-framework
 ```css
 /* Import style to styles.scss */
 @import '../../node_modules/adl-ui-framework/adl-ui-framework.styles.scss';
+@include font_mixins('/assets/fonts/');
 ```
 
 ### Usage
 
 #### Example
+
+```typescript
+import { IconService } from 'adl-ui-framework';
+
+export class AppComponent {
+	constructor(
+		private iconService: IconService,
+	) {
+		iconService.registerIcons(IconsList, '../../../../assets/images/icons');
+	}
+}
+```
 
 ```html
 <adl-table [table]="table"
